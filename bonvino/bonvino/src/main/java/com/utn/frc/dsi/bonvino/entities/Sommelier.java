@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+
 @Entity
 @Table(name = "Sommeliers")
 public class Sommelier {

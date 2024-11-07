@@ -9,6 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+
 @Entity
 @Table(name = "RegionVitivinicolas")
 public class RegionVitivinicola {
@@ -21,6 +22,7 @@ public class RegionVitivinicola {
 
     @ManyToOne
     @JoinColumn(name = "idProvincia", nullable = false)
+
     private Provincia provincia;
 
     @OneToMany(mappedBy = "regionVitivinicola")

@@ -8,6 +8,8 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+
+
 @Entity
 @Table(name = "Maridajes")
 public class Maridaje {

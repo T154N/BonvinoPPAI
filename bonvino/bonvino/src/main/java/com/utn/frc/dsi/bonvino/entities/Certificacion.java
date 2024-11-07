@@ -10,6 +10,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Getter
 @Setter
+
+
 @Entity
 @Table(name = "Certificacion")
 public class Certificacion {

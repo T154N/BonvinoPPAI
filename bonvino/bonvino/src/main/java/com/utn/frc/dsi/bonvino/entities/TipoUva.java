@@ -7,6 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
+
 @Entity
 @Table(name = "TipoUvas")
 public class TipoUva {
