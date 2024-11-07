@@ -29,7 +29,7 @@ public class Vino {
     private Float precioArs;
 
     @ManyToOne
-    @JoinColumn(name = "idVino", nullable = false)
+    @JoinColumn(name = "idBodega", nullable = false)
     private Bodega bodega;
 
     @ManyToMany
