@@ -54,10 +54,8 @@ public class Bodega {
     private List<Siguiendo> seguidores;
 
     public boolean disponibleActualizar(LocalDate fechaActual) {
-        if (fechaActual.getYear() >= this.periodoActualizacion) {
-            return true;
-        }
-        return false;
+        return true;
     }
+
 
 }
