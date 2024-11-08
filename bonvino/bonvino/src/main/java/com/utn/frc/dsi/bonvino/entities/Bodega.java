@@ -53,8 +53,11 @@ public class Bodega {
     @OneToMany(mappedBy = "bodega")
     private List<Siguiendo> seguidores;
 
-    public boolean disponibleActualizar(LocalDate today) {
-        return true;
+    public boolean disponibleActualizar(LocalDate fechaActual) {
+        if (fechaActual.getYear() >= this.periodoActualizacion) {
+            return true;
+        }
+        return false;
     }
 
 }

@@ -35,4 +35,13 @@ public class ControllerActualizarVinos {
         // Creamos la respuesta con un mensaje y la lista de bodegas
         return new BodegaResponse("Bodegas disponibles para actualizar", bodegasDisponiblesParaActualizar);
     }
+
+    /* localhost:8080/vinos/seleccionarBodega/Bodega[1*]
+
+    @GetMapping("/seleccionarBodega")
+    public BodegaResponse tomarSeleccionBodega(Bodega bodega) {
+
+    }
+    */
+
 }
