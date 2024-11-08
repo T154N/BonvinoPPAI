@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @NoArgsConstructor
@@ -51,5 +52,9 @@ public class Bodega {
 
     @OneToMany(mappedBy = "bodega")
     private List<Siguiendo> seguidores;
+
+    public boolean disponibleActualizar(LocalDate today) {
+        return true;
+    }
 
 }
