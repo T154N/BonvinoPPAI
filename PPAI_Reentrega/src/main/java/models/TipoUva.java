@@ -1,10 +1,20 @@
 package models;
 
+import jakarta.persistence.*;
+import org.springframework.cache.annotation.CacheConfig;
+
+import java.util.List;
+
+@Entity
+@Table(name = "TIPO_UVA")
 public class TipoUva {
 
 	//ATRIBUTOS
-	private String descripcion;
+	@Id
 	private String nombre;
+
+	@Column(name = "descripcion")
+	private String descripcion;
 
 	//CONSTRUCTOR
 	public TipoUva(String descripcion, String nombre) {
@@ -25,6 +35,7 @@ public class TipoUva {
 	}
 
 	//GETTERS Y SETTERS
+
 	public String getDescripcion() {
 		return descripcion;
 	}

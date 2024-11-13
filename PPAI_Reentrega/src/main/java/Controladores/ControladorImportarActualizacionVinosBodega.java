@@ -14,7 +14,7 @@ import java.util.*;
 import javax.swing.*;
 import java.time.LocalDate;
 
-import service.*;
+
 
 // ---------------------------------------------------
 // Definicion de la clase controlador
@@ -40,18 +40,12 @@ public class ControladorImportarActualizacionVinosBodega {
 	// inicializar pantalla
 	InterfazSB interfazSB = new InterfazSB();
 	InterfazNotificacion interfazNotificacion = new InterfazNotificacion();
-	BodegaService bodegaService = new BodegaService();
-	VinoService vinoService = new VinoService();
-	MaridajeService maridajeService = new MaridajeService();
-	TipoUvaService tipoUvaService = new TipoUvaService();
-	VarietalService varietalService = new VarietalService();
 
 	public ControladorImportarActualizacionVinosBodega() {
-		this.listaBodegas = bodegaService.obtenerBodegas();
+
 		this.bodegaSeleccionada = new ArrayList<>();
-		this.maridajesList = maridajeService.obtenerMaridajes();
-		this.listaVinos = vinoService.obtenerVinos();
-		this.tipoUvaList = tipoUvaService.obtenerTiposUva();
+
+
 		this.Listasiguiendo = new ArrayList<>();
 		this.listaEnofilos = new ArrayList<>();
 		this.listaUsuario = new ArrayList<>();

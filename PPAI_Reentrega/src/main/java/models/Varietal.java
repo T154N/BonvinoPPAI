@@ -1,11 +1,26 @@
 package models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "VARIETAL")
 public class Varietal {
 
 	//ATRIBUTOS
-	private String descripcion;
+	@Id
+	@Column(name = "id_varietal")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer idVarietal;
+
+	@Column(name = "porcentaje_composicion")
 	private Double porcentajeComposicion;
+
+	@Column(name = "descripcion")
+	private String descripcion;
+
+	@OneToOne
 	private TipoUva tipoUva;
+
 
 	//CONSTRUCTOR
 	public Varietal(String descripcion, Double porcentajeComposicion, TipoUva tipoUva) {
@@ -29,6 +44,15 @@ public class Varietal {
 	}
 
 	//METODOS
+
+	public Integer getIdVarietal() {
+		return idVarietal;
+	}
+
+	public void setIdVarietal(Integer idVarietal) {
+		this.idVarietal = idVarietal;
+	}
+
 	public void conocerTiposUva() {
 	}
 

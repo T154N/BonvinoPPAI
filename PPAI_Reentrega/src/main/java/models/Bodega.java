@@ -1,22 +1,40 @@
 package models;
 
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
-
+@Entity
+@Table(name="BODEGA")
 public class Bodega {
-
+	@Id
+	@Column(name = "nombre_bodega")
+	private String nombreBodega;
+	@Column(name = "coordenadas_ubicacion")
 	private String coordenadasUbicacion;
 	private String descripcion;
 	private String historia;
-	private String nombreBodega;
+	@Column(name = "periodo_actualizacion")
 	private Integer periodoActualizacion;
-	private NovedadEvento novedadEvento;
+	@ManyToMany
+	@JoinTable(
+			name = "BODEGA_EVENTO",
+			joinColumns = @JoinColumn(name = "nombre_bodega"),
+			inverseJoinColumns = @JoinColumn(name = "id_novedad_evento")
+	)
+	@Column(name = "novedades_evento")
+	private List<NovedadEvento> novedadesEvento;
+	@ManyToOne(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
+	@JoinColumn(name = "idRegionVitivinicola")
 	private RegionVitivinicola regionVitivinicola;
-	private String ultimaActualizacion; //AGREGAR
+	@Column(name = "ultima_actualizacion")
+	private String ultimaActualizacion;
+
+	@OneToMany(mappedBy = "bodega",  cascade = { CascadeType.PERSIST, CascadeType.MERGE},fetch = FetchType.LAZY,orphanRemoval = true)
+	private List<Vino> vinos;
+
 
 	public Bodega() {
 	}
@@ -42,7 +60,7 @@ public class Bodega {
 				  String historia,
 				  String nombreBodega,
 				  int periodoActualizacion,
-				  NovedadEvento novedad,
+				  List<NovedadEvento> novedad,
 				  RegionVitivinicola region,
 				  String ultimaActualizacion) {
 		this.coordenadasUbicacion = coordenadasUbicacion;
@@ -50,7 +68,7 @@ public class Bodega {
 		this.historia = historia;
 		this.nombreBodega = nombreBodega;
 		this.periodoActualizacion = periodoActualizacion;
-		this.novedadEvento = novedad;
+		this.novedadesEvento = novedad;
 		this.regionVitivinicola = region;
 		this.ultimaActualizacion = ultimaActualizacion;
 	}
@@ -63,7 +81,7 @@ public class Bodega {
 				", historia='" + historia + '\'' +
 				", nombre_bodega='" + nombreBodega + '\'' +
 				", periodoActualizacion=" + periodoActualizacion +
-				", novedadEvento=" + novedadEvento +
+				", novedadEvento=" + novedadesEvento +
 				", regionVitivinicola=" + regionVitivinicola +
 				", ultimaActualizacion='" + ultimaActualizacion + '\'' +
 				'}';
@@ -150,14 +168,14 @@ public class Bodega {
 		this.periodoActualizacion = periodoActualizacion;
 	}
 
-	public NovedadEvento getNovedadEvento() {
+	public List<NovedadEvento> getNovedadEvento() {
 		// begin-user-code
-		return novedadEvento;
+		return novedadesEvento;
 		// end-user-code
 	}
 
-	public void setNovedadEvento(NovedadEvento novedadEvento) {
-		this.novedadEvento = novedadEvento;
+	public void setNovedadEvento(List<NovedadEvento> novedadEvento) {
+		this.novedadesEvento = novedadEvento;
 	}
 
 	public RegionVitivinicola getRegionVitivinicola() {

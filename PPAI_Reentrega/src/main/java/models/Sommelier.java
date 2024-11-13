@@ -1,15 +1,32 @@
 package models;
 
+import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "SOMMELIER")
 public class Sommelier {
 
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+	@Column(name = "id_sommelier")
 	private Integer id_sommelier;
+
+
+	@OneToOne
 	private Usuario usuario;
-	private String fecha_validacion;
+
+	@Column(name = "fecha_validacion")
+	private LocalDateTime fecha_validacion;
+
+	@Column(name = "nombre")
 	private String nombre;
+
+	@Column(name = "nota_pesentacion")
 	private String nota_pesentacion;
 
-	public Sommelier(Integer id_sommelier, Usuario usuario, String fecha_validacion, String nombre, String nota_pesentacion) {
+	public Sommelier(Integer id_sommelier, Usuario usuario, LocalDateTime fecha_validacion, String nombre, String nota_pesentacion) {
 		this.id_sommelier = id_sommelier;
 		this.usuario = usuario;
 		this.fecha_validacion = fecha_validacion;
@@ -31,9 +48,7 @@ public class Sommelier {
 		return usuario;
 	}
 
-	public String getFecha_validacion() {
-		return fecha_validacion;
-	}
+
 
 	public String getNombre() {
 		return nombre;
@@ -51,9 +66,7 @@ public class Sommelier {
 		this.usuario = usuario;
 	}
 
-	public void setFecha_validacion(String fecha_validacion) {
-		this.fecha_validacion = fecha_validacion;
-	}
+
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;

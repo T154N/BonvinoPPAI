@@ -1,20 +1,55 @@
 package models;
 
 
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "RESENIAS")
 public class Resenia {
 	//ATRIBUTOS
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+	@Column(name = "id_resenia")
+	private Integer idResenia;
+
+	@Column(name = "comentario")
 	private String comentario;
+
+	@Column(name = "es_premium")
 	private Boolean esPremium;
-	private String fechaResenia;
+
+	@Column(name = "fecha_resenia")
+	private LocalDateTime fechaResenia;
+
+	@Column(name = "puntaje")
 	private Integer puntaje;
+
+	@ManyToOne
+	@JoinColumn(name = "vino", referencedColumnName = "vino", nullable = false)
+	private Vino vino;
 
 	//CONSTRUCTOR
 
-	public Resenia(String comentario, Boolean esPremium, String fechaResenia, Integer puntaje) {
+
+
+
+	public Resenia(String comentario, Boolean esPremium, LocalDateTime fechaResenia, Integer idResenia, Integer puntaje) {
 		this.comentario = comentario;
 		this.esPremium = esPremium;
 		this.fechaResenia = fechaResenia;
+		this.idResenia = idResenia;
 		this.puntaje = puntaje;
+	}
+
+	public Resenia(String comentario, Boolean esPremium, LocalDateTime fechaResenia, Integer idResenia, Integer puntaje, Vino vino) {
+		this.comentario = comentario;
+		this.esPremium = esPremium;
+		this.fechaResenia = fechaResenia;
+		this.idResenia = idResenia;
+		this.puntaje = puntaje;
+		this.vino = vino;
 	}
 
 	public Resenia(){
@@ -22,6 +57,26 @@ public class Resenia {
 	}
 
 	//METODOS
+
+
+
+
+	public Vino getVino() {
+		return vino;
+	}
+
+	public void setVino(Vino vino) {
+		this.vino = vino;
+	}
+
+	public Integer getIdResenia() {
+		return idResenia;
+	}
+
+	public void setIdResenia(Integer idResenia) {
+		this.idResenia = idResenia;
+	}
+
 	public void esPremium() {
 
 	}
@@ -51,11 +106,11 @@ public class Resenia {
 		this.esPremium = esPremium;
 	}
 
-	public String getFechaResenia() {
+	public LocalDateTime getFechaResenia() {
 		return fechaResenia;
 	}
 
-	public void setFechaResenia(String fechaResenia) {
+	public void setFechaResenia(LocalDateTime fechaResenia) {
 		this.fechaResenia = fechaResenia;
 	}
 

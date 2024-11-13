@@ -1,67 +1,74 @@
-/**
- * 
- */
 package models;
 
+import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Entity
+@Table(name = "NOVEDAD_EVENTO")
 public class NovedadEvento {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_novedad_evento")
+	private Integer idNovedadEvento;
+	@Column(name = "codigo_descuento_premium")
+	private String codigoDescuentoPremium;
+	private String descripcion;
+	@Column(name = "es_solo_premium")
+	private Boolean esSoloPremium;
+	@Column(name = "fecha_hora_evento")
+	private LocalDateTime fechaHoraEvento;
+	@Column(name = "nombre_evento")
+	private String nombreEvento;
+	@ManyToMany(mappedBy = "novedadesEvento")
+	private List<Bodega> bodegas;
 
-
-
-	private Object codigoDescuentoPremium;
 
 	public NovedadEvento(int idNovedadEvento, int esSoloPremium, String fechaHoraEvento, String codDescPremium, String descripcion, String nombreEvento) {
 	}
 
+	public NovedadEvento() {
 
-	public Object getCodigoDescuentoPremium() {
+	}
+
+	public String getCodigoDescuentoPremium() {
 		return codigoDescuentoPremium;
 	}
 
-	public void setCodigoDescuentoPremium(Object codigoDescuentoPremium) {
+	public void setCodigoDescuentoPremium(String codigoDescuentoPremium) {
 		this.codigoDescuentoPremium = codigoDescuentoPremium;
 	}
 
-	private Object descripcion;
-
-
-	public Object getDescripcion() {
+	public String getDescripcion() {
 		return descripcion;
 	}
 
-
-	public void setDescripcion(Object descripcion) {
+	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
-	private Object esSoloPremium;
-
-	public Object getEsSoloPremium() {
+	public Boolean getEsSoloPremium() {
 		return esSoloPremium;
 	}
 
-	public void setEsSoloPremium(Object esSoloPremium) {
+	public void setEsSoloPremium(Boolean esSoloPremium) {
 		this.esSoloPremium = esSoloPremium;
 	}
 
-	private Object fechaHoraEvento;
-
-	public Object getFechaHoraEvento() {
+	public LocalDateTime getFechaHoraEvento() {
 		return fechaHoraEvento;
 	}
 
-	public void setFechaHoraEvento(Object fechaHoraEvento) {
+	public void setFechaHoraEvento(LocalDateTime fechaHoraEvento) {
 		this.fechaHoraEvento = fechaHoraEvento;
 	}
 
-	private Object nombreEvento;
-
-
-	public Object getNombreEvento() {
+	public String getNombreEvento() {
 		return nombreEvento;
 	}
 
-	public void setNombreEvento(Object nombreEvento) {
+	public void setNombreEvento(String nombreEvento) {
 		this.nombreEvento = nombreEvento;
 	}
 
@@ -74,4 +81,12 @@ public class NovedadEvento {
 
 	public void mostrarDescripcion() {
 	}
+
+    public Integer getIdNovedadEvento() {
+        return idNovedadEvento;
+    }
+
+    public void setIdNovedadEvento(Integer idNovedadEvento) {
+        this.idNovedadEvento = idNovedadEvento;
+    }
 }

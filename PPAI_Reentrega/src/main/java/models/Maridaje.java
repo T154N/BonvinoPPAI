@@ -1,13 +1,18 @@
 package models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "MARIDAJE")
 public class Maridaje {
-	//ATRIBUTOS
-	private String nombre;
+	@Id
+	@Column(name = "nombre_maridaje")
+	private String nombreMaridaje;
 	private String descripcion;
 
 	//CONSTRUCTOR
-	public Maridaje(String nombre, String descripcion) {
-		this.nombre = nombre;
+	public Maridaje(String nombreMaridaje, String descripcion) {
+		this.nombreMaridaje = nombreMaridaje;
 		this.descripcion = descripcion;
 	}
 
@@ -38,7 +43,7 @@ public class Maridaje {
 	}
 
 	public boolean _sosMaridaje(Maridaje maridajeAPI) {
-		if (this.nombre.equals(maridajeAPI.getNombre())){
+		if (this.nombreMaridaje.equals(maridajeAPI.getNombre())){
 			return true;
 		}else {
 			return false;
@@ -46,11 +51,11 @@ public class Maridaje {
 	}
 	//GETTERS Y SETTERS
 	public String getNombre() {
-		return nombre;
+		return nombreMaridaje;
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.nombreMaridaje = nombre;
 	}
 
 	public String getDescripcion() {

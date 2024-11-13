@@ -1,23 +1,20 @@
-/**
- * 
- */
 package models;
 
-/** 
+/**
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
  * @author Cristian
  * @generated "UML a Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class Certificacion {
-	/** 
+/**
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML a Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	private Object adjuntoURL;
 
-	/** 
+	/**
 	 * @return el adjuntoURL
 	 * @generated "UML a Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
@@ -27,7 +24,7 @@ public class Certificacion {
 		// end-user-code
 	}
 
-	/** 
+	/**
 	 * @param adjuntoURL el adjuntoURL a establecer
 	 * @generated "UML a Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */

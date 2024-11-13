@@ -1,16 +1,23 @@
 package models;
 
-//----------------------------------
-//----------------------------------
+import jakarta.persistence.*;
 
 import java.util.List;
 
+@Entity
 public class Enofilo {
-	//ATRIBUTOS
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_enofilo")
+	private Integer idEnofilo;
 	private String apellido;
+	@Column(name = "imagen_perfil")
 	private String imagenPerfil;
 	private String nombre;
+	@OneToMany(mappedBy = "idEnofilo")
 	private List<Siguiendo> siguiendo;
+	@OneToOne
 	private Usuario usuario;
 
 	//CONSTRUCTOR

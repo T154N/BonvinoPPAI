@@ -1,18 +1,37 @@
 package models;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Usuario {
-	//ATRIBUTOS
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_usuario")
+	private Integer idUsuario;
+
+	@Column(name = "contrasenia")
 	private String contrasenia;
+
+	@Column(name = "nombre")
 	private String nombre;
+
+	@Column(name = "premium")
 	private Boolean premium;
-	private CobroPremium cobroPremium;
+
 
 	//CONSTRUCTOR
-	public Usuario(String contrasenia, String nombre, Boolean premium, CobroPremium cobroPremium) {
+
+	public Usuario(String contrasenia, Integer idUsuario, String nombre, Boolean premium) {
+		this.contrasenia = contrasenia;
+		this.idUsuario = idUsuario;
+		this.nombre = nombre;
+		this.premium = premium;
+	}
+
+	public Usuario(String contrasenia, String nombre, Boolean premium) {
 		this.contrasenia = contrasenia;
 		this.nombre = nombre;
 		this.premium = premium;
-		this.cobroPremium = cobroPremium;
 	}
 
 	@Override
@@ -21,13 +40,22 @@ public class Usuario {
 				"contrasenia='" + contrasenia + '\'' +
 				", nombre='" + nombre + '\'' +
 				", premium=" + premium +
-				", cobroPremium=" + cobroPremium +
 				'}';
 	}
 
 	public Usuario() {}
 
     //METODOS
+
+
+	public Integer getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(Integer idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+
 	public void esPremium() {
 
 	}
@@ -64,11 +92,4 @@ public class Usuario {
 		this.premium = premium;
 	}
 
-	public CobroPremium getCobroPremium() {
-		return cobroPremium;
-	}
-
-	public void setCobroPremium(CobroPremium cobroPremium) {
-		this.cobroPremium = cobroPremium;
-	}
 }

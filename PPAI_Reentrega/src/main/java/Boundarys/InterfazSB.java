@@ -68,7 +68,7 @@ public class InterfazSB {
 						Resenia reseniaIndividual = new Resenia();
 						reseniaIndividual.setComentario(reseniaJsonObject.optString("comentario"));
 						reseniaIndividual.setEsPremium(reseniaJsonObject.optBoolean("esPremium"));
-						reseniaIndividual.setFechaResenia(reseniaJsonObject.optString("fechaResenia"));
+						//reseniaIndividual.setFechaResenia(reseniaJsonObject.optString("fechaResenia"));
 						reseniaIndividual.setPuntaje(reseniaJsonObject.optInt("puntaje"));
 						reseniasList.add(reseniaIndividual);
 					}

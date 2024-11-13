@@ -4,44 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="690bc1d6-4a96-4238-9d20-93f008b9197b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseDeDatos/baseDeDatosConexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/NovedadEvento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Sommelier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Vino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ApiDSI/ApiDSI/bdd.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiDSI/ApiDSI/bdd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ApiDSI/ApiDSI/host.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiDSI/ApiDSI/host.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PPAI_Reentrega.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPAI_Reentrega.iml" afterDir="false" />
+    <list default="true" id="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/VinoId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/EnofiloRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MaridajeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/VarietalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/VinoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/VinoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/interfaces/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/interfaces/VinoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PPAI_Reentrega.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ceab4cd-bf83-41eb-a4f8-eea90fa373e5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ceab4cd-bf83-41eb-a4f8-eea90fa373e5/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/db270cc7-f91b-449f-a772-bda522b014ae.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/db270cc7-f91b-449f-a772-bda522b014ae/storage_v2/_src_/database/BonvinoDSI.pVTqAg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/db270cc7-f91b-449f-a772-bda522b014ae/storage_v2/_src_/database/BonvinoDSI.pVTqAg/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazSB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazSB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Bodega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Bodega.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Certificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Certificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/CobroPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CobroPremium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Enofilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Enofilo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Maridaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Maridaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/NovedadEvento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Pais.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Provincia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Provincia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/RegionVitivinicola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Resenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Resenia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Siguiendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Siguiendo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Sommelier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/TipoUva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TipoUva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Varietal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Varietal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Vino.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controladores/ControladorImportarActualizacionVinosBodega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controladores/ControladorImportarActualizacionVinosBodega.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/PantallaAB/PantallaAB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/PantallaAB/PantallaAB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/views/tablaResumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/views/tablaResumen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/PantallaAB/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Certificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Certificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Resenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Resenia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Siguiendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Siguiendo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Sommelier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sommelier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/TipoUva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TipoUva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Varietal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Varietal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Vino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Vino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Boundarys/InterfazSB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Boundarys/InterfazSB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Bodega.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Certificacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/CobroPremium.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Enofilo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Maridaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/NovedadEvento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Pais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Provincia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/RegionVitivinicola.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Resenia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Siguiendo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Sommelier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/TipoUva.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Varietal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clases/Vino.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controladores/ControladorImportarActualizacionVinosBodega.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controladores/ControladorImportarActualizacionVinosBodega.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/baseDeDatos/bdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PantallaAB/PantallaAB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/BodegaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/CobroPremiumService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EnofiloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/MaridajeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ReseniaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SiguiendoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SommelierService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/TipoUvaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/VarietalService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/VinoService.class" beforeDir="false" />
     </list>
-    <list id="7d802aef-6051-4abb-ad5c-1002269c21ec" name="Changes by caladux" comment="" />
-    <list id="e209aa41-add1-4c56-9b01-811512b2abf6" name="Changes by Cristian" comment="" />
+    <list id="6c12ebd7-07e7-4a6c-8fb2-b22682edac44" name="Changes by Cristian" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <list id="711c9956-32a7-44fc-811e-cb61c92ce049" name="Changes by Mateo Bringas" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Bodega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Bodega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Certificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Certificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/CobroPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CobroPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Enofilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Enofilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Maridaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Maridaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/NovedadEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/NovedadEvento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Siguiendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Siguiendo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Usuario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +99,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,21 +107,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Cristulo&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "T154N"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/T154N/TPIFINAL.git",
+    "url": "https://github.com/T154N/BonvinoPPAI.git",
     "accountId": "5953d712-6305-4e72-81c7-568f45af2104"
   }
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3 }</component>
-  <component name="ProjectId" id="2hO6zEbHTaabxsrgeuckjHdgTDV" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/models/Siguiendo.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="6" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="3" end1="3" start2="7" end2="11" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="4" end1="5" start2="12" end2="13" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="6" end1="6" start2="14" end2="16" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="7" end1="7" start2="17" end2="19" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="8" end1="8" start2="20" end2="22" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="9" end1="10" start2="23" end2="30" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="12" end1="13" start2="32" end2="35" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="16" end1="16" start2="38" end2="40" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="17" end1="18" start2="41" end2="41" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="19" end1="19" start2="42" end2="68" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="87" end1="90" start2="136" end2="136" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="91" end1="94" start2="137" end2="137" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/models/Certificacion.java">
+      <ranges>
+        <range start1="0" end1="3" start2="0" end2="0" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="5" end1="6" start2="2" end2="3" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="12" end1="13" start2="9" end2="10" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="19" end1="20" start2="16" end2="17" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="29" end1="30" start2="26" end2="27" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/models/Usuario.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="5" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="3" end1="4" start2="6" end2="12" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="5" end1="5" start2="13" end2="15" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="6" end1="6" start2="16" end2="18" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="7" end1="8" start2="19" end2="20" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="10" end1="11" start2="22" end2="31" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="14" end1="15" start2="34" end2="34" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="23" end1="24" start2="42" end2="42" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="30" end1="30" start2="48" end2="58" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+        <range start1="66" end1="73" start2="94" end2="94" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/models/RegionVitivinicola.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="7" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="3" end1="4" start2="8" end2="10" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="7" end1="7" start2="13" end2="15" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="9" end1="10" start2="17" end2="18" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="13" end1="13" start2="21" end2="26" changelist="711c9956-32a7-44fc-811e-cb61c92ce049" />
+        <range start1="16" end1="16" start2="29" end2="47" changelist="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2omEpiCgRWHq5mnmL8kPDvPqovz" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -80,40 +183,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.PantallaAB.executor&quot;: &quot;Run&quot;,
-    &quot;Application.baseDeDatosConexion.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/abiga/Desktop/TPIFINAL22222222222/TPIFINAL/PPAI_Reentrega&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;sql.rename.search.for.storage.occurrences&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.main.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.main.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\oneDrive\OneDrive - frc.utn.edu.ar\Escritorio\TPIFINALFaltaConectarLaApi\TPIFINAL\PPAI_Reentrega\src\main\resources" />
-      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\java\baseDeDatos" />
-      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\resources" />
-      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.PantallaAB" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -127,44 +219,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="690bc1d6-4a96-4238-9d20-93f008b9197b" name="Changes" comment="" />
-      <created>1717453040951</created>
+      <changelist id="bdef4346-0aee-4bc1-8cb3-e2bf5afd6741" name="Changes" comment="" />
+      <created>1731466536307</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717453040951</updated>
-      <workItem from="1717453040953" duration="15000" />
-      <workItem from="1717721399788" duration="3425000" />
-      <workItem from="1717812186637" duration="55000" />
-      <workItem from="1718044433683" duration="416000" />
-      <workItem from="1718044858031" duration="655000" />
-      <workItem from="1718039005554" duration="719000" />
-      <workItem from="1718039735412" duration="5765000" />
-      <workItem from="1718170274454" duration="1281000" />
-      <workItem from="1718593423951" duration="617000" />
-      <workItem from="1730853519592" duration="665000" />
-      <workItem from="1730913888925" duration="5152000" />
-      <workItem from="1730926246779" duration="1083000" />
-      <workItem from="1730934045647" duration="1757000" />
-      <workItem from="1731033462084" duration="199000" />
-      <workItem from="1731045548577" duration="65000" />
-      <workItem from="1731170329922" duration="325000" />
-      <workItem from="1731170688105" duration="118000" />
-      <workItem from="1731173050324" duration="356000" />
-      <workItem from="1731174801041" duration="450000" />
-      <workItem from="1731175748086" duration="6069000" />
-      <workItem from="1731183302242" duration="10825000" />
-      <workItem from="1731207521601" duration="7442000" />
-      <workItem from="1731217175817" duration="2753000" />
-      <workItem from="1731244989525" duration="12787000" />
-      <workItem from="1731263456311" duration="8191000" />
-      <workItem from="1731301642307" duration="10694000" />
-      <workItem from="1731354547402" duration="3603000" />
-      <workItem from="1731366500869" duration="2937000" />
-      <workItem from="1731463385346" duration="1151000" />
+      <updated>1731466536307</updated>
+      <workItem from="1731466537614" duration="5228000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

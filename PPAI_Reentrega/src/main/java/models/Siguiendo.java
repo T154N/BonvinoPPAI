@@ -1,20 +1,69 @@
 package models;
 
-public class Siguiendo {
+import jakarta.persistence.*;
 
-	//ATRIBUTOS
+@Entity
+@Table(name = "SIGUIENDO")
+public class Siguiendo {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_siguiendo")
+	private Integer idSiguiendo;
+
+	@OneToOne
 	private Bodega bodega;
+
+	@Column(name = "fecha_fin")
 	private String fechaFin;
+
+	@Column(name = "fecha_inicio")
 	private String fechaInicio;
+
+	@OneToOne
 	private Sommelier sommelier;
-	private int amigo;
+
+	@OneToOne
+	private Enofilo amigo;
+
+	@ManyToOne(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
+	@JoinColumn(name = "id_enofilo")
+	private Enofilo idEnofilo;
 
 	//CONSTRUCTOR
-	public Siguiendo(Bodega bodega, String fechaFin, String fechaInicio, Sommelier sommelier, int amigo) {
+
+	public Siguiendo(Enofilo amigo, Bodega bodega, String fechaFin, String fechaInicio, Enofilo idEnofilo, Integer idSiguiendo, Sommelier sommelier) {
+		this.amigo = amigo;
 		this.bodega = bodega;
 		this.fechaFin = fechaFin;
 		this.fechaInicio = fechaInicio;
+		this.idEnofilo = idEnofilo;
+		this.idSiguiendo = idSiguiendo;
 		this.sommelier = sommelier;
+	}
+
+
+
+	public Enofilo getIdEnofilo() {
+		return idEnofilo;
+	}
+
+	public void setIdEnofilo(Enofilo idEnofilo) {
+		this.idEnofilo = idEnofilo;
+	}
+
+	public Integer getIdSiguiendo() {
+		return idSiguiendo;
+	}
+
+	public void setIdSiguiendo(Integer idSiguiendo) {
+		this.idSiguiendo = idSiguiendo;
+	}
+
+	public Enofilo getAmigo() {
+		return amigo;
+	}
+
+	public void setAmigo(Enofilo amigo) {
 		this.amigo = amigo;
 	}
 
@@ -85,11 +134,5 @@ public class Siguiendo {
 		this.sommelier = sommelier;
 	}
 
-	public int getAmigo() {
-		return amigo;
-	}
 
-	public void setAmigo(int amigo) {
-		this.amigo = amigo;
-	}
 }

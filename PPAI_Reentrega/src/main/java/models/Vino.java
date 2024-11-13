@@ -1,20 +1,45 @@
 package models;
 
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@IdClass(VinoId.class)
+@Table(name="VINO")
 public class Vino {
 
-	//Atributos
+	@Id
+	@Column(name = "aniada")
 	private Integer aniada;
-	private String imagenEtiqueta;	//Modificada
+	@Id
+	@Column(name = "nombre_vino")
 	private String nombreVino;
+
+	@Column(name = "imagen_etiqueta")
+	private String imagenEtiqueta;    //Modificada
+	@Column(name = "nota_de_cata_bodega")
 	private String notaDeCataBodega;	//Modificable
+
+	@Column(name = "precio_ARS")
 	private Double precioARS;	//Modificable
+
+	@ManyToOne(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
+	@JoinColumn(name = "nombre_bodega", referencedColumnName = "nombre_bodega", nullable = false)
 	private Bodega bodega;
+
+	@OneToMany(mappedBy = "vino",  cascade = { CascadeType.PERSIST, CascadeType.MERGE},fetch = FetchType.LAZY,orphanRemoval = true)
 	private List<Resenia> resenia;
+
+	@OneToMany(mappedBy = "vino",  cascade = { CascadeType.PERSIST, CascadeType.MERGE},fetch = FetchType.LAZY,orphanRemoval = true)
 	private List<Varietal> varietal;
-	private List<Maridaje> maridaje;	//Modificable
+
+	@OneToMany(mappedBy = "vino",  cascade = { CascadeType.PERSIST, CascadeType.MERGE},fetch = FetchType.LAZY,orphanRemoval = true)
+	private List<Maridaje> maridaje;
+
+
+
 
 	//Contructor
 	public Vino(Integer aniada, String imagenEtiqueta, String nombre, String notaDeCataBodega, Double precioARS, Bodega bodega, List<Resenia> resenia, List<Varietal> varietal, List<Maridaje> maridaje) {
@@ -96,6 +121,15 @@ public class Vino {
 	}
 
 	//Metodos
+
+	public String getNombreVino() {
+		return nombreVino;
+	}
+
+	public void setNombreVino(String nombreVino) {
+		this.nombreVino = nombreVino;
+	}
+
 	public void calcularRanking() {
 
 	}
